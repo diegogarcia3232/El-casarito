@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Fotos</title>
+	<link rel="stylesheet" href="carrusel casarito.css">
+
+    <style>
+        * {box-sizing: border-box;}
+        body {font-family: "DecimaMonoProLt", sans-serif;}
+        .mySlides {display: none;}
+        
+        /* Slideshow container */
+        .slideshow-container {
+          max-width: 1000px;
+          position: relative;
+          margin: auto;
+        }
+        
+        /* Caption text */
+        .text {
+          color: #f2f2f2;
+          font-size: 15px;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
+        }
+        
+        /* Number text (1/3 etc) */
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+        
+        /* The dots/bullets/indicators */
+        .dot {
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: rgb(255, 0, 0);
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+        
+        .active {
+          background-color: #717171;
+        }
+        
+        /* Fading animation */
+        .fade {
+          -webkit-animation-name: fade;
+          -webkit-animation-duration: 4.5s;
+          animation-name: fade;
+          animation-duration: 4.5s;
+        }
+        
+        @-webkit-keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+        
+        @keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+        
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+          .text {font-size: 11px}
+        }
+
+        .principal {
+            display: flex;
+            flex-direction: column;
+            width:33.33%;
+
+        }
+
+        .caja4 {
+            width: 70%;
+        }
+
+        .caja1{
+          
+      
+            width:33.33%;
+        }
+        .caja2{
+            width: 33.33%;
+        }
+        .negro {
+          
+ 
+            background-color: rgb(255, 255, 255);
+            width:33.33%;
+            
+        }
+
+        .cabecera {
+            display:flex;
+        }
+        </style>
+</head>
+<body>
+  <div class="fondo"></div>
+  <div class="cabecera">
+        <div class="caja1">
+          <img src="https://cdn.worldvectorlogo.com/logos/salamanca.svg" class="img-logo" width="75%" height="70%"/>
+        </div>  
+        
+        <div class="caja2">         
+            <img src="https://destinocastillayleon.es/index/wp-content/uploads/2013/11/Plaza-Mayor-de-la-Alberca.jpg" width="430px" height="430px">
+        </div>
+        <div class="negro" ></div>
+    </div>
+
+    <nav class="principal">
+        <h1></h1>
+        <div class="caja4 div_flex">
+              <img style="margin: auto;" src="https://www.viajaporlibre.com/wp-content/uploads/2016/04/La-Alberca21-768x512.jpg" width="55%" height="40%">
+              <h1 font-family="DecimaMonoProLt" >Estatua al cerdo </h1>
+        </div>
+        <div class="caja4 div_flex">
+            <hr style="width:75%;">
+            <img style="margin: auto;" src="https://losviajesdeclaudia.com/wp-content/uploads/2020/09/que-ver-en-la-alberca-la-plaza-mayor.jpg" width="55%" height="40%" >
+            <h1>Plaza del pueblo</h1>
+        </div>
+        <div class="caja4 div_flex">
+             <hr style="width:75%;">
+             <img style="margin: auto;" src="https://ep01.epimg.net/elviajero/imagenes/2021/02/04/actualidad/1612439629_863639_1612441231_noticia_normal.jpg"width="55%" height="40%">
+             <h1>Torre de la Abadía de los templarios</h1>
+        </div>
+    </nav>
+
+        <div class="caja5">
+      
+              <div class="slideshow-container">
+                <h1>Fotos</h1>
+              <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+
+                <img src="https://ep01.epimg.net/elviajero/imagenes/2021/02/04/actualidad/1612439629_863639_1612441231_noticia_normal.jpg" style="width:100%">
+                <div class="text">T</div>
+              </div>
+              
+              <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="" style="width:100%">
+                <div class="text"></div>
+              </div>
+              
+              <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="" style="width:100%">
+                <div class="text"></div>
+              </div>
+            
+              <div style="text-align:center">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+              </div>
+      </div>
+      <div class="fondo">
+        
+      </div>
+      <link rel="stylesheet" href="carrusel casarito.css">
+      <script src="carrusel casarito.js"></script>
+               
+</html>
+
+
+

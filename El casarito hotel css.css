@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.fondo
+{
+    background-image: url("https://www.hola.com/imagenes/viajes/20210302185282/salamanca-escapadas-en-coche-cercanas/0-925-568/candelario-salamanca-t.jpg");
+    background-size:cover;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1000;
+    position: fixed;
+}
+
+
+/* MENU superior */
+.cabecera {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(121, 211, 99);
+    position: fixed;
+}
+
+.cabecera > div {
+    width: 70px;
+    height: 40px;
+    padding: 10px;
+}
+
+.cabecera > div:hover { /* esto es lo que añado al :hover */
+    background-color:rgb(74, 145, 92) ;
+    color: seashell;
+}
+
+.option {
+    float: left;
+}
+
+.cart {
+    float: right;
+}
+
+/* MENU lateral */
+.menu {
+    top: 150px;
+    width: 20vw;
+    height:200vh;
+    position: absolute;
+    z-index: -10;
+    background-color:rgb(194, 175, 194);
+}
+.fcc-btn {
+    background-color: #199319;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+  }
+/* USO de grids */
+.caja1 {
+    margin:auto;
+    top: 30vh;
+    left:30vw;
+    background-color: tomato;
+    position: absolute;
+    z-index: -10;
+    
+} 
+
+.container {
+    width: 750px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "imagen imagen caracteristicas"
+      "imagen imagen caracteristicas"
+      "descripcion descripcion descripcion";
+  }
+  
+  .imagen { grid-area: imagen; background-color: tomato; }
+  
+  .caracteristicas { grid-area: caracteristicas; background-color: rgb(194, 175, 194);}
+  
+  .descripcion { grid-area: descripcion; background-color: rgb(99, 160, 211);}
+  
+
+/* MENU inferior */
+.footer {
+    top: 200vh;
+    left:0vw;
+    background-color: rgb(202, 215, 226);
+    position: absolute;
+    width: 100vw;
+    height: 40vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+table, th, td {
+    border: 1px solid black;
+  }
