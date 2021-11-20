@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto</title>
+
+    <link rel="stylesheet" type="text/css" href="./cuestionario casarito.css">
+</head>     
+<body>
+<div class="contact_form">
+    <div class="formulario">
+        <h1>Formulario de contacto</h1>
+        <h3>Escribenos y en breve los pondremos en contacto contigo</h3>
+
+        <form action="submeter-formulario.php"method="post"></form>
+
+        <p>
+            <label for="nombre" class="colocar_nombre">Nombre
+                <span class="obligatorio">*</label></span>
+            </label>
+            <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+        </p>
+        
+        <p>
+            <label for="email" class="colocar_email">Nombre
+                <span class="obligatorio">*</label></span>
+            </label>
+            <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu email">   
+        </p>
+
+        <p>
+            <label for="telephone" class="colocar_telefono">Nombre
+            </label>
+         <input type="tel" name="introducir_telefono" id="telefono" required="obligatorio" placeholder="Escribe tu telefono">        
+        </p>
+        <form>
+            <h3>¿Cuántas personas vais a ser?</h3>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">1-2</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">3-4</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">Más de 5</label>
+          </form>
+          <p><iframe src="https://www.youtube.com/watch?v=QbE0rH0HMVQ" height="200" width="453" title="Un mensaje de nuestro colaborador"></iframe></p>
+          <form action="/action_page.php">
+            <label for="fname">1+1</label><br>
+            <input type="text" id="fname" name="fname" value="2"><br>
+            <label for="lname">Si o no</label><br>
+            <input type="text" id="lname" name="lname" value="Puede ser"><br><br>
+            <input type="submit" value="Submit">
+          </form>
+<form>
+    <h1>¿Cuantas horas pasas frente al ordenador</h1>
+  <label for="opcion1">1-2h </label><br>
+  <input type="checkbox" id="opcion1" name="opcion1" value="1-2">
+  <label for="opcion2"> 3-4h</label><br>
+  <input type="checkbox" id="opcion2" name="opcion2" value="3-4">
+  <label for="opcion3"> He abandonado toda posesión física como un Diógenes reencarnado y me he fundido en uno con la máquina, soy el ordenador en sí. </label>
+  <input type="radio" id="opcion3" name="opcion3" value="movida larga">
+</form>
+
